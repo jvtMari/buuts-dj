@@ -1,0 +1,8 @@
+<html>
+    <h1>Buuts Email verification.</h1>
+    <h2>Hi {{ user.get_full_name }}, </h2>
+    <p>Please click on the link to confirm your registration,</p>
+    <a href="http://{{ domain }}{% url 'accounts:activate' uid=uid token=token %}">Click here. </a>
+    <p>If you think, it's not you, then just ignore this email, </p>
+    <p>Thanks!.</p>
+</html>
